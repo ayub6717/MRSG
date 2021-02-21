@@ -2,30 +2,51 @@
 <html lang="en">
 
 <head>
-  <title>School</title>
+  <title>MRSG</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/log.css">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="icon" href="img/log88.png" type="image/gif" sizes="16x16">
-  <!-- <link href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css" rel="stylesheet"></head> -->
+  <link rel="icon" href="img/logo-1.png" type="image/gif" sizes="16x16">
 
-<body>
+<body onload="startTime()">
 
   <!-- *********head-1-start*********** -->
   <div class="head-1">
     <div class="container">
-      <div class="row" style="padding: 10px;">
+      <div class="row">
         <div class="col-sm-3" style="padding: 5px;padding-left: 20px;">
-          <i class="fas fa-phone"></i> Call Us : +8801731357071
+          <div class="bt_1" id="txt"></div>
         </div>
         <div class="col-sm-6" style="padding: 5px;padding-left: 20px;">
-          <i class="fas fa-envelope-open-text"></i> Mail : Ahmed987658.yuo@gmail.com
+          <span class="bt_1"><a style="text-decoration: none; color: white;" href="MRSG-Support.html">BECOME A SUPPORTER </a></span>
         </div>
         <div class="col-sm-3" style="padding: 5px;padding-left: 20px;">
-          <i class="fas fa-sign-in-alt" style="float: right;"> <a style="color: white; text-decoration: none;" href="log-registration.html">Login</a></i> 
+          <div>
+            <span style="margin: auto; display: table; text-align: center;" class="fas fa-sign-in-alt bt_1" > <a style=" text-decoration: none; color: white; margin-left: 5px;" href="log-registration.html">Login / My MRSG</a></span> 
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div>
+          <img style="width: 65%;" src="img/logo-1.png" alt="logo-1">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <input class="input_1" placeholder="Search here..." list="brow"> <button class="fa fa-search btn_1"></button>
+        <datalist id="brow">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
       </div>
     </div>
   </div>
@@ -38,46 +59,75 @@
     </button>
     <div class="container ">
       <ul class="navbar-nav collapse navbar-collapse" id="collapsibleNavbar">
-        <li class="nav-item">
-          <a class="nav-link" href="#"> <img src="img/log88.png" alt="" style="width: 100px;"> </a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="apply.html">Apply</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">GCC slip</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Medical</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Check status</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="contact-us.html">Contact us</a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link " data-toggle="dropdown" href="#">Rules</a>
+        <span style="margin-right: -15px; margin-bottom: 7px;" class="fa fa-home"></span>
+        <li class="nav-item active dropdown">
+          <a class="nav-link "  href="index.html">All Books</a>
           <ul class="dropdown-menu">
-            <li><a href="apply.html">Apply for GHC accreditation</a></li>
-            <li><a href="medical-status.html">Print GCC slip</a></li>
-            <li><a href="#">Medical centers</a></li>
-            <li><a href="#">Check canditaed status</a></li>
-            <li><a href="#">Guidlines</a></li>
+            <li><a href="#">Another Books 1</a></li>
+            <li><a href="#">Another Books 2</a></li>
+            <li><a href="#">Another Books 3</a></li>
+            <li><a href="#">Another Books 4</a></li>
+            <li><a href="#">Another Books 5</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="Books-by-Aurthor.html">Books by Aurthor’s</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Another Books 1</a></li>
+            <li><a href="#">Another Books 2</a></li>
+            <li><a href="#">Another Books 3</a></li>
+            <li><a href="#">Another Books 4</a></li>
+            <li><a href="#">Another Books 5</a></li>
           </ul>
         </li>
 
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="Administration.html">Administration </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Another Books 1</a></li>
+            <li><a href="#">Another Books 2</a></li>
+            <li><a href="#">Another Books 3</a></li>
+            <li><a href="#">Another Books 4</a></li>
+            <li><a href="#">Another Books 5</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="Publications.html">Publications</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Another Books 1</a></li>
+            <li><a href="#">Another Books 2</a></li>
+            <li><a href="#">Another Books 3</a></li>
+            <li><a href="#">Another Books 4</a></li>
+            <li><a href="#">Another Books 5</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="Education.html">Education</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Another Books 1</a></li>
+            <li><a href="#">Another Books 2</a></li>
+            <li><a href="#">Another Books 3</a></li>
+            <li><a href="#">Another Books 4</a></li>
+            <li><a href="#">Another Books 5</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="Top-Members.html">Top Members</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Another Books 1</a></li>
+            <li><a href="#">Another Books 2</a></li>
+            <li><a href="#">Another Books 3</a></li>
+            <li><a href="#">Another Books 4</a></li>
+            <li><a href="#">Another Books 5</a></li>
+          </ul>
+        </li>
+
+
         <li class="nav-item">
-          <a class="nav-link" href="#">Guidelines</a>
+          <a class="nav-link" href="contact-us.html">Contact us</a>
         </li>
       </ul>
     </div>
@@ -85,6 +135,28 @@
   </nav>
   <!-- **********dropdown menubar End*********  -->
 
+
+  <!-- ***************News Ticker****************** -->
+
+  <div class="row">
+    <div class="col-sm-2">
+      <h6 style="text-align: center; margin-top: 5px;">Notice Update</h6>
+    </div>
+    <div class="col-sm-10">
+      <div class="tcontainer">
+        <div class="ticker-wrap">
+          <div class="ticker-move">
+            <div class="ticker-item">Poor state of poverty alleviation.</div>
+            <div class="ticker-item">Assam flood situation worsens again, death toll rises to 89 .</div>
+            <div class="ticker-item">Health sector rife with mismanagement, corruption.</div>
+            <div class="ticker-item">Regent Hospital chairman Shahed handed over to RAB .</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***************News Ticker End****************** -->
 
 
   <!-- **********Contact-us********* -->
@@ -217,13 +289,13 @@
 
           <ul class="footer_ul2_amrc">
             <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
-              <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.rohan.com/</a></p>
+              <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.twitter.com/</a></p>
             </li>
-            <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
-              <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.rohan.com/</a></p>
+            <li><a href="#"><i class="fab fa-facebook fleft padding-right"></i> </a>
+              <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.facebook.com/</a></p>
             </li>
-            <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
-              <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.rohan.com/</a></p>
+            <li><a href="#"><i class="fab fa-linkedin fleft padding-right"></i> </a>
+              <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.linkedin.com/</a></p>
             </li>
           </ul>
         </div>
@@ -231,16 +303,8 @@
     </div>
 
 
-    <div class="container">
-      <ul class="foote_bottom_ul_amrc">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <p class="text-center">Copyright @2020 | Designed With by <a href="#">Your Company Name</a></p>
+    <div class="container"> <br>
+      <p class="text-center">All rights reserved@MRSG</p>
 
       <ul class="social_footer_ul">
         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -251,6 +315,7 @@
     </div>
 
   </footer>
+
   <!-- ********************footer End******************** -->
 
 
